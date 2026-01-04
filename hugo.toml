@@ -31,7 +31,7 @@ theme = "mana"
     # If you have an image you want to provide as an asset and run through Hugo's pipes to resize based on use.
     # This will only be used if "url" is *not* set.
     # This path is relative to the "assets" folder.
-    assetPath = "images/DSC_6856.JPG"
+    assetPath = "images/avatar.JPG"
     
   # Info for the copyright notice in the footer.
   [params.copyright]
