@@ -41,7 +41,7 @@ homepageLayout = "profile" #blog
 profileWelcomeHeading = "Hi I'm Mandar Dharmadhikari"
 profileWelcomeSubHeading = "Welcome!"
 profileShortbio = "I am passionate about software engineering and philosophy. Here, you'll find a mix of long essays, quick notes, and personal reflections on what I’ve learned throughout my journey."
-profilePhoto = "img/profile/avatar-ghibli.png"
+profilePhoto = "img/profile/profile.jpg"
 since = "2026"
 
 [pagination]
