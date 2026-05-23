@@ -39,14 +39,13 @@ hidePostImage = false
 tagSubtitle = "Here, you’ll discover the latest notes that explore new insights, and unique perspectives on the world."
 homepageLayout = "profile" #blog
 profileWelcomeHeading = "Hi I'm Mandar Dharmadhikari"
-profileWelcomeSubHeading = "Welcome to my digital garden!"
-profileShortbio = "I’m passionate about the web platform and love creating for the web. Here, you'll find a mix of long essays, quick notes, and personal reflections on what I’ve learned throughout my journey."
+profileWelcomeSubHeading = "Welcome!"
+profileShortbio = "I am passionate about software engineering and philosophy. Here, you'll find a mix of long essays, quick notes, and personal reflections on what I’ve learned throughout my journey."
 profilePhoto = "img/profile/avatar-ghibli.png"
+since = "2026"
 
 [pagination]
 pagerSize = 9
-
-
 
 [Params.Author]
   name = "Mandar Dharmadhikari"
@@ -111,5 +110,4 @@ pagerSize = 9
     name = "About"
     url = "/about/"
     weight = 6
-
 
