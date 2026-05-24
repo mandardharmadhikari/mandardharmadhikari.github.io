@@ -71,32 +71,42 @@
 
 
 {{ range .Site.Sections }}
-  {{ if eq .Section "notes" }}
+  {{ if eq .Section "bookshelf" }}
   <section class="notes-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4 mt-4">
-          <h2 class="fw-medium">Notes</h2>
-          <p class="mt-0">A personal mix of poetry, reading notes, social media fragments, and curious reflections.</p>
+          <h2 class="fw-medium">Bookshelf</h2>
+          <p class="mt-0">A list of the books I have read over time.</p>
         </div>
       </div>
-
-
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
-          <div class="row">
-            {{ range first 3 (where site.RegularPages "Type" "in" (slice "notes" ) ) }}
-            {{ partial "post_preview_imgless_card" .}}
-            {{ end }}
-          </div>
-        </div>
-      </div>
-
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
           <div class="row">
             <div class="col-sm-12  col-md-12 col-lg-6 col-xl-6 mb-4">
-              <a href="{{ relLangURL "/notes/" }}" class="link-underline position-relative d-inline-block">Browse all <i class="bi bi-arrow-right"></i> </a>
+              <a href="{{ relLangURL "/bookshelf/" }}" class="link-underline position-relative d-inline-block">Browse all <i class="bi bi-arrow-right"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+  {{ if eq .Section "papershelf" }}
+  <section class="section-primary-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4 mt-4">
+          <h2 class="fw-medium">Papershelf</h2>
+          <p class="mt-0">A list of the technical papers I have read over time.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+          <div class="row">
+            <div class="col-sm-12  col-md-12 col-lg-6 col-xl-6 mb-4">
+              <a href="{{ relLangURL "/papershelf/" }}" class="link-underline position-relative d-inline-block">Browse all <i class="bi bi-arrow-right"></i> </a>
             </div>
           </div>
         </div>

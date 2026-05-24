@@ -1,20 +1,13 @@
 ---
 type : "tags"
-layout : "about"
-title: "About me"
+layout : "shelf"
+title: "Paper Shelf"
 ---
 
-I am Bino Kochumol Varghese.
+I have read following papers
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+## CAP Theorem Critique
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+[Notes](/posts/2020/install-hugo/)
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-
-##### Social Media
-- [Instagram](https://www.instagram.com/binovarghese_)
-- [Twitter](https://twitter.com/binovarghese_)
-- [Linkedin](https://linkedin.com/in/binovarghese-)
- 
-
+[A critique of CAP Theorem](https://arxiv.org/pdf/1509.05393v1)
