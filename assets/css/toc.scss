@@ -5,7 +5,7 @@
   }
 
   &:not(.collapsed) {
-    color: #2e7d32;
+    color: var(--color-primary);
     background-color: #f0fdf4;
 
     &::after {
