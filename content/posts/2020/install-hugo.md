@@ -5,14 +5,15 @@ tags: ["hugo","blog"]
 image : "/img/posts/2025/4.jpg"
 Description  : "In this guide, we'll walk through installing Hugo, a popular static site generator..."
 featured: true
+toc: true
 ---
 
 Hugo comes in three versions: Standard, Extended, and Extended/Deploy. The Standard edition covers core functionalities, while Extended adds advanced options, with Extended/Deploy** offering further deployment features.
 
-### Setting Up Your Directories
+## Setting Up Your Directories
 1. Open File Explorer and create a folder, e.g., `C:\Hugo`, and inside it, a `bin` folder.
 
-### Installing Hugo
+## Installing Hugo
 1. Download the latest Hugo executable from [Hugo releases](https://github.com/gohugoio/hugo/releases/).
 2. Extract the contents into `..\Hugo\bin`.
 3. Open Command Prompt as Administrator and add Hugo to the PATH:  
