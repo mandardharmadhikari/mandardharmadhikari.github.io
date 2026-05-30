@@ -6,6 +6,7 @@ image : "/img/posts/2025/5.jpg"
 Description  : "Markdown is a lightweight, plain-text formatting language used for creating styled text through simple, readable syntax...."
 series:
    - Theme Basics
+weight: 2
 ---
 
 ### What is Markdown?

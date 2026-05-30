@@ -1351,6 +1351,12 @@ ul.share li:hover .fab {
   content: "\f5a2";
 }
 
+.list-group-item.series-active {
+  color: var(--color-primary);
+  background-color: #f0fdf4;
+  font-weight: 600;
+}
+
 {{ if .Site.Params.useHLJS }}
   @import "highlight.min.scss";
 {{ else }}

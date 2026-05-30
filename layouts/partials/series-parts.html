@@ -1,0 +1,59 @@
+{{ if .Params.series }}
+
+{{ $page := . }}
+{{ $series := index .Params.series 0 }}
+{{ $taxonomy := index site.Taxonomies.series (lower $series) }}
+
+{{ if $taxonomy }}
+
+{{ $seriesPages := $taxonomy.Pages.ByWeight }}
+
+<div class="accordion mt-5 mb-5" id="postSeriesAccordion">
+    <div class="accordion-item">
+
+        <h3 class="accordion-header" id="heading-{{ $series | urlize }}">
+
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-{{ $series | urlize }}">
+
+                <span class="ms-2">
+                    This article is part of {{ $series }} series
+                </span>
+
+                <span class="badge rounded-pill text-bg-light ms-2">
+                    {{ len $seriesPages }}
+                </span>
+
+            </button>
+
+        </h3>
+
+        <div id="collapse-{{ $series | urlize }}" class="accordion-collapse collapse">
+
+            <div class="accordion-body">
+
+                <div class="list-group">
+
+                    {{ range $index, $post := $seriesPages }}
+
+                    <a href="{{ $post.RelPermalink }}"
+                        class="list-group-item {{ if eq $post.RelPermalink $page.RelPermalink }}series-active{{ end }}">
+
+                        Part {{ add $index 1 }} · {{ $post.Title }}
+
+                    </a>
+
+                    {{ end }}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{{ end }}
+{{ end }}

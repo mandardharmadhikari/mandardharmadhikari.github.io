@@ -8,6 +8,7 @@ featured: true
 toc: true
 series:
    - Theme Basics
+weight: 1
 ---
 
 Hugo comes in three versions: Standard, Extended, and Extended/Deploy. The Standard edition covers core functionalities, while Extended adds advanced options, with Extended/Deploy** offering further deployment features.
