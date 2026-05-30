@@ -37,6 +37,7 @@ lunrSearch = true
 previewCardImagePlacement = "bottom"
 hidePostImage = false
 tagSubtitle = "Various posts collected by tags"
+seriesSubtitle = "Posts collected per series"
 homepageLayout = "profile" #blog
 profileWelcomeHeading = "Hi I'm Mandar Dharmadhikari"
 profileWelcomeSubHeading = "Welcome!"
@@ -110,9 +111,17 @@ pagerSize = 9
     url = "/tags/"
     weight = 6
 
+[[menu.main]]
+    name = "Series"
+    url = "/series/"
+    weight = 7
 
 [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 5
 
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"

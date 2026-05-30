@@ -4,6 +4,8 @@ date: 2020-01-27
 tags: ["markdown"]
 image : "/img/posts/2025/5.jpg"
 Description  : "Markdown is a lightweight, plain-text formatting language used for creating styled text through simple, readable syntax...."
+series:
+   - Theme Basics
 ---
 
 ### What is Markdown?

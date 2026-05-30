@@ -52,7 +52,18 @@
               </h1>
 
               <h4 class="tags-subheading fw-light mb-4">
-                {{ .Site.Params.tagSubtitle }}</h4>
+                {{ if eq .Data.Plural "tags" }}
+                {{ .Site.Params.tagSubtitle }}
+
+                {{ else if eq .Data.Plural "series" }}
+                {{ .Site.Params.seriesSubtitle }}
+
+                {{ else if eq .Data.Plural "categories" }}
+                {{ .Site.Params.categorySubtitle }}
+                {{ end }}
+
+
+              </h4>
             </div>
             {{ else }}
 

@@ -5,6 +5,8 @@ tags: ["hugo","blog"]
 image : "/img/posts/2025/2.jpg"
 Description  : "In this blog post, I’ll walk through the key features of the Lightbi theme and how to make the most of them for a visually appealing, user-friendly website."
 featured: true
+series:
+   - Theme Basics
 ---
 
 
