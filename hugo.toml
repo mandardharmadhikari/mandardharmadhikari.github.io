@@ -1,6 +1,6 @@
 baseURL = "https://mandardharmadhikari.github.io/"
 languageCode = "en"
-title = "Mandar Dharmadhikari's Writings"
+title = "Mandar Dharmadhikari"
 theme = "lightbi-hugo"
 summaryLength  = "30"
 metaDataFormat = "yaml"
