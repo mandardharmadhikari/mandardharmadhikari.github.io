@@ -18,7 +18,8 @@
 
               {{ if .HasChildren }}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   {{ .Name }}
                 </a>
                 <ul class="dropdown-menu">
@@ -41,37 +42,40 @@
                 {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
                 {{ $active = or $active (and (eq .Name "About") (eq $current.Section "about")) }}
 
-                <a class="nav-link {{ if $active }} active {{ end }}" title="{{ .Name }}"
-                  href="{{ .URL  | relLangURL }}"> {{ .Name }}</a>
+                <a class="nav-link {{ if $active }} selected {{ end }}" title="{{ .Name }}"
+                  href="{{ .URL  | relLangURL }}">
+                  {{ .Name }}</a>
               </li>
 
               {{ end }}
               {{ end }}
 
 
-            <!-- Language Switcher -->    
-            {{ if hugo.IsMultilingual }}
+              <!-- Language Switcher -->
+              {{ if hugo.IsMultilingual }}
               {{ with .AllTranslations }}
               <li class="nav-item dropdown">
-                <button class="d-flex align-items-center gap-1 p-1 border-0 bg-white" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="d-flex align-items-center gap-1 p-1 border-0 bg-white" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   {{ $.Language.Lang }}
                   <i class="bi bi-chevron-down small chevron-icon"></i>
                 </button>
-              
+
                 <ul class="dropdown-menu">
                   {{ range . }}
-                    {{ if eq .Language.Lang $.Language.Lang }}
-                      <li><a class="dropdown-item active" aria-current="page" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-                    {{ else }}
-                      <li><a class="dropdown-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-                    {{ end }}
+                  {{ if eq .Language.Lang $.Language.Lang }}
+                  <li><a class="dropdown-item active" aria-current="page" href="{{ .Permalink }}">{{
+                      .Language.LanguageName }}</a></li>
+                  {{ else }}
+                  <li><a class="dropdown-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                  {{ end }}
                   {{ end }}
                 </ul>
               </li>
               {{ end }}
-            {{ end }}
+              {{ end }}
 
-            <!-- Theme switcher -->
+              <!-- Theme switcher -->
               <li class="nav-item nav-link">
                 <a id="dark-mode-toggle" class="bi bi-moon-stars" role="button"></a>
               </li>
