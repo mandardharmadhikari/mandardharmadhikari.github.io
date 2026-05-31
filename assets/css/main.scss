@@ -1357,6 +1357,14 @@ ul.share li:hover .fab {
   font-weight: 600;
 }
 
+.btn-dark {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: Var(--color-primary);
+}
+
 {{ if .Site.Params.useHLJS }}
   @import "highlight.min.scss";
 {{ else }}
