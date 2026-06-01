@@ -37,7 +37,7 @@
 
   # Footer
 - id: poweredBy # Accepts HTML
-  translation: 'Powered by <a href="https://gohugo.io">Hugo</a> & <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi.</a>'
+  translation: 'Powered by <a href="https://gohugo.io">Hugo</a> & <a href="https://github.com/binokochumolvarghese/lightbi-hugo">Lightbi.</a>&nbsp; <b>Opinions are my own and do not reflect that of my employer.</b>'
 
 # Navigation
 - id: toggleNavigation
